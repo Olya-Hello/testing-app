@@ -1,9 +1,20 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router";
 
 export function AppLayout() {
     return (
         <>
-            <header>{/*навигация*/}</header>
+            <header>
+                <nav>
+                    <NavLink 
+                    to="/login"
+                    className={ ({isActive}) => (isActive ? 'active' : '') }
+                    >
+                        Login
+                    </NavLink>
+                    <NavLink to="/student">Student</NavLink>
+                    <NavLink to="/admin">Admin</NavLink>
+                </nav>
+            </header>
             <main>
                 <Outlet />
             </main>

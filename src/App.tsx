@@ -1,12 +1,12 @@
 import { AdminPage } from "./pages/admin/AdminPage"
 import { LoginPage } from "./pages/login/LoginPage"
-import { StudentsPage } from "./pages/students/StudentsPage"
+import { StudentPage } from "./pages/students/StudentPage"
 
 function App() {
   return (
     <>
       <AdminPage />
-      <StudentsPage />
+      <StudentPage />
       <LoginPage />
     </>
   )
